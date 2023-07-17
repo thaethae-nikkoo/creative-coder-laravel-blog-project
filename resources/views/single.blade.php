@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="site-cover site-cover-sm same-height overlay single-page"
-    style='background-image: url({{$blog->thumbnail?"/storage/$blog->thumbnail":"/storage/thumbnails/hero_5.jpg"}});'>
+    style='background-image: url({{$blog->thumbnail?"/storage/$blog->thumbnail":"/images/hero_5.jpg"}});'>
     <div class="container">
         @if (session('error'))
         <div class=" d-flex justify-content-center">
