@@ -20,7 +20,7 @@ class AdminBlogController extends Controller
         return view('admin.blogs.create-blogs', [
             'title'=>'Create',
             'route'=>'store',
-            'method'=>'POST',
+
             'categories' => Category::all(),
         ]);
 
@@ -28,6 +28,7 @@ class AdminBlogController extends Controller
 
     public function store()
     {
+
         $blog =  request()->validate([
              'title' => ['required','min:10'],
              'slug' => [Rule::unique('blogs', 'slug'),'required','alpha_dash'],

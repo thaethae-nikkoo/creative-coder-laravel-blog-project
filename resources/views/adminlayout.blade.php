@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <link rel="stylesheet" href="/css/flatpickr.min.css">
-    <script src="/ckeditor/ckeditor.js"></script>
+
 
     <title>Blogy &mdash;</title>
 </head>
@@ -61,7 +61,7 @@
     <script src="/js/navbar.js"></script>
     <script src="/js/counter.js"></script>
     <script src="/js/custom.js"></script>
-
+    <script src="/ckeditor/ckeditor.js"></script>
     <script>
         ClassicEditor.create(document.querySelector(".editor"), {
             licenseKey: "",

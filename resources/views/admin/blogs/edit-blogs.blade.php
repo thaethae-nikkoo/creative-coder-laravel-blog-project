@@ -31,7 +31,7 @@
                 <x-form.input-wrapper>
 
                     <x-form.label name="intro" />
-                    <x-form.textarea name="intro" rows="3" :value="$blog->intro" />
+                    <x-form.input name="intro" :value="$blog->intro" />
                     <x-form.error name="intro" />
 
                 </x-form.input-wrapper>

@@ -11,7 +11,6 @@
         <div class="card-body p-5">
             <form action="/admin/blogs/store" method="POST" enctype="multipart/form-data">
                 @csrf
-
                 <x-form.input-wrapper>
                     <x-form.label name="title" />
 

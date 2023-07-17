@@ -3,8 +3,9 @@
 @forelse ($blogs as $blog)
 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
     <div class="post-entry-alt">
-        <a href="/blogs/{{$blog->slug}}" class="img-link"><img src='{{asset("storage/$blog->thumbnail")}}' alt="Image"
-                class="img-fluid"></a>
+        <a href="/blogs/{{$blog->slug}}" class="img-link"><img
+                src='{{$blog->thumbnail?asset("storage/$blog->thumbnail"):"/storage/thumbnails/hero_5.jpg"}}'
+                alt="Image" class="img-fluid"></a>
         <div class="excerpt">
 
 
@@ -18,7 +19,7 @@
 
             </div>
 
-            <p>{{$blog->intro}}
+            <p>{!!$blog->intro!!}
             </p>
             <p class="category"><a href='/?category={{$blog->category->slug}}{{request()->search?"&search=".request()->search:""}}{{request()->author?"
                     &author=".request()->author:""}}'>
