@@ -29,7 +29,8 @@
                     <th>{{$blog->title}}</th>
                     <th>{{$blog->intro}}</th>
                     <th>{{$blog->category->name}}</th>
-                    <th><img src="/storage/{{$blog->thumbnail}}" width="200px" height="100px" alt="Thumbnail"></th>
+                    <th><img src='{{asset("/storage/$blog->thumbnail")}}' width="200px" height="100px" alt="Thumbnail">
+                    </th>
                     <th><a href="/admin/blogs/{{$blog->id}}/edit" type="button" class="btn-warning mx-2 shadow-none"
                             style="padding:10px; border:none; border-radius:5px; font-size:13px;">Edit</a>
                         <button type="button" data-bs-toggle="modal" data-bs-target="#destroy{{$blog->id}}"

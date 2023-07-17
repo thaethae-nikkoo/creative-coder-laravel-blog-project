@@ -23,6 +23,7 @@ class BlogFactory extends Factory
             'slug'=>fake()->unique()->slug(),
             'intro'=>fake()->sentence(),
             'body' => fake()->sentence(450),
+            'thumbnail'=>'default_images/img_4_horizontal.jpg',
             'category_id'=>Category::factory(),
             'user_id'=>User::factory(),
         ];

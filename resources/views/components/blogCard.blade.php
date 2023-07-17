@@ -3,8 +3,7 @@
 @forelse ($blogs as $blog)
 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
     <div class="post-entry-alt">
-        <a href="/blogs/{{$blog->slug}}" class="img-link"><img
-                src='{{$blog->thumbnail?asset("storage/$blog->thumbnail"):"/images/hero_5.jpg"}}' alt="Image"
+        <a href="/blogs/{{$blog->slug}}" class="img-link"><img src='{{asset("/storage/$blog->thumbnail")}}' alt="Image"
                 class="img-fluid"></a>
         <div class="excerpt">
 
